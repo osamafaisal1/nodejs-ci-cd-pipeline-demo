@@ -9,30 +9,30 @@ pipeline {
     }
 
     stages {
+
         stage('Clone') {
             steps {
-                echo 'Cloning repository...'
-                git 'https://github.com/osamafaisal1/nodejs-ci-cd-pipeline-demo.git'
+                git branch: 'main', url: 'https://github.com/osamafaisal1/nodejs-ci-cd-pipeline-demo.git'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                echo 'Building Docker image...'
+                echo '🐳 Building Docker image...'
                 sh 'docker build -t myapp:latest .'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running simple test...'
+                echo '🧪 Running simple test...'
                 sh 'echo "All tests passed successfully ✅"'
             }
         }
 
         stage('Deploy Container') {
             steps {
-                echo 'Deploying application container...'
+                echo '🚀 Deploying application container...'
                 // Stop old container if running
                 sh 'docker ps -q --filter "ancestor=myapp:latest" | xargs -r docker stop'
                 // Remove old containers
