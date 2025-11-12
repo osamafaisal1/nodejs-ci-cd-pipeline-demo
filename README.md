@@ -42,4 +42,9 @@ Hosted the final app on an AWS EC2 instance ☁️
 🧰 Tools & Tech Used:
 Node.js | Jenkins | Docker | AWS EC2 | GitHub
 
+## 🧑‍💻 Author
+**Osama Faisal**  
+Cloud & DevOps Engineer Intern  
+[LinkedIn Profile](https://www.linkedin.com/in/i-am-osama-faisal/)
+
 #DevOps #CICD #Jenkins #Docker #AWS #Nodejs #CloudComputing #Automation #OsamaFaisal #DevOpsJourney
